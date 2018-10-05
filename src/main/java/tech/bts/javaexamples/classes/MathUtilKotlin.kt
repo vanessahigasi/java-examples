@@ -1,4 +1,4 @@
-package tech.bts.javaexamples
+package tech.bts.javaexamples.classes
 
 object MathUtilKotlin {
 
