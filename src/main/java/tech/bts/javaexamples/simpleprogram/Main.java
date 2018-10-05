@@ -1,5 +1,7 @@
 package tech.bts.javaexamples.simpleprogram;
 
+import tech.bts.javaexamples.classes.MathUtil;
+
 import java.util.*;
 
 public class Main {
@@ -18,9 +20,9 @@ public class Main {
         //this can be done in Java 10 var height = 150.0
         double weight = 40.5;
 
-        if (age>=18) {
-            System.out.printf("adult");
-        } else if (age >=13) {
+        if (age >= 18) {
+            System.out.println("adult");
+        } else if (age >= 13) {
             System.out.println("teenager");
         } else {
             System.out.println("kid");
@@ -63,22 +65,9 @@ public class Main {
         //call the function
         printHello("Mary", 25);
 
-        final double p = power(2, 10);
+        final double p = MathUtil.power(2, 10);
         System.out.println("2^10 = "  + p);
     }
-
-    static double power(double base, double exponent) {
-        double result = 1; //multiply initial 1 or zero
-
-        for (int i = 1; i <= exponent ; i++) {
-            result = result * base;
-
-        }
-
-        return result;
-    }
-
-
 
 
     /** prints hello */

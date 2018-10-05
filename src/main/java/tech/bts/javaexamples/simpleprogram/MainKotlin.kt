@@ -1,7 +1,9 @@
 package tech.bts.javaexamples.simpleprogram
 
+import tech.bts.javaexamples.MathUtilKotlin
 
-    fun main(args: Array<String>) {
+
+fun main(args: Array<String>) {
         println("Hello, world!")
 
         //Declare a variable
@@ -49,23 +51,15 @@ package tech.bts.javaexamples.simpleprogram
         val discount = 10
         val finalPrice = price - discount
         println("The final price is $finalPrice")
-        // Cant dot it: finalPrice = price
+        // Cant do it: finalPrice = price
 
         printHello("Peter",35)
 
-        val p = power(2.0,10)
+        val p = MathUtilKotlin.power(2.0,10)
         println("2^10 = $p")
     }
 
-fun power(base: Double, exponent: Int) : Double {
 
-    var result = 1.0
-
-    for (i in 1..exponent) {
-        result *= base
-    }
-      return result
-}
 
 fun printHello(name: String, age: Int){
 
