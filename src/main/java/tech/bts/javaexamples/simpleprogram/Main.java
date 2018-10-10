@@ -46,7 +46,7 @@ public class Main {
 
         List<Integer> numbers = Arrays.asList(8,4,6,5);
 
-        //can't dot it: numbers.add(3)
+        //can't do it: numbers.add(3)
 
         Map<String, Integer> ages = new HashMap<>();
         ages.put("John", 30);

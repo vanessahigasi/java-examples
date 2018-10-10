@@ -38,7 +38,7 @@ fun main(args: Array<String>) {
 
         var numbers = listOf(8, 4, 6, 5)
 
-        //can't dot it: numbers.add(3);
+        //can't do it: numbers.add(3);
 
         var ages = mutableMapOf<String, Int>()
         ages.put("John",30)
