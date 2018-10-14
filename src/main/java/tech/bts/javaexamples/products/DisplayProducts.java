@@ -30,7 +30,7 @@ public class DisplayProducts {
 
         int columnWidth = 10;
 
-        List<String> fieldNames = Arrays.asList("Name","Price","Available");
+        List<String> fieldNames = Arrays.asList("Name","Price","Available","Quantity");
 
 
         String title = "";
@@ -51,6 +51,7 @@ public class DisplayProducts {
             String productLine = StringUtil.padRight(product.getName(),columnWidth)
                     + StringUtil.padRight("" + product.getPrice(),columnWidth)
                     + StringUtil.padRight("" + product.isAvailable(),columnWidth)
+                    + StringUtil.padRight("" + product.getQuantity(),columnWidth)
                     ;
 
             System.out.println(productLine);
