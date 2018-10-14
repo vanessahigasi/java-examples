@@ -6,12 +6,14 @@ public class Product {
     private String name;
     private double price;
     private boolean available;
+    private int quantity;
 
     //constructor
-    public Product(String name, double price, boolean available) {
+    public Product(String name, double price, boolean available, int quantity) {
         this.name = name;
         this.price = price;
         this.available = available;
+        this.quantity = quantity;
     }
 
     //getters
@@ -26,5 +28,9 @@ public class Product {
 
     public boolean isAvailable() {
         return available;
+    }
+
+    public int getQuantity() {
+        return quantity;
     }
 }

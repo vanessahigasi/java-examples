@@ -11,9 +11,9 @@ public class DisplayProducts {
     public static void main(String[] args) {
 
         //new object
-        Product p1 = new Product("iphone",1000,true);
-        Product p2 = new Product("tv",300,true);
-        Product p3 = new Product("MacPro",1800,true);
+        Product p1 = new Product("iphone",1000,true,20);
+        Product p2 = new Product("tv",300,true,10);
+        Product p3 = new Product("MacPro",1800,true,10);
 
         //create a list of products
         /**
@@ -21,7 +21,7 @@ public class DisplayProducts {
         List<Product> products2 = Arrays.asList(p1,p2,p3);
          */
 
-        List<Product> products = new ArrayList<Product>();
+        List<Product> products = new ArrayList<>();
 
         products.add(p1);
         products.add(p2);

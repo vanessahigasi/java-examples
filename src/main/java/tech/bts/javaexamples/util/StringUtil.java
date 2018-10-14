@@ -6,7 +6,7 @@ import java.util.List;
 public class StringUtil {
 
     /**
-     * returns a string made of s */
+     * returns a string made of s repeated n times*/
 
     public static String repeat (String s, int n) {
 
